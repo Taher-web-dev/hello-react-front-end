@@ -3,7 +3,7 @@ export const FAILURE = 'HELLO/GREETING/FAILURE';
 export const GET = 'HELLO/GREETING/GET';
 
 export const getDataStart = () => ({
-  type: START
+  type: START,
 });
 
 export const getDataFailure = (payload) => ({
@@ -12,6 +12,6 @@ export const getDataFailure = (payload) => ({
 });
 
 export const extractData = (payload) => ({
-    type: GET,
-    payload
+  type: GET,
+  payload,
 });

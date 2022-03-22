@@ -1,6 +1,6 @@
-import { START, FAILURE, GET } from "../action/action";
+import { START, FAILURE, GET } from '../action/action';
 
-const greetingReducer = (state= {}, action)=> {
+const greetingReducer = (state = {}, action) => {
   switch (action.type) {
     case START:
       return {
@@ -12,7 +12,7 @@ const greetingReducer = (state= {}, action)=> {
         ...state,
         loading: false,
         error: action.payload,
-      }
+      };
     case GET:
       return {
         ...state,
@@ -23,6 +23,6 @@ const greetingReducer = (state= {}, action)=> {
     default:
       return state;
   }
-}
+};
 
 export default greetingReducer;
