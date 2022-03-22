@@ -1,6 +1,10 @@
+import Greeting from './Components/Greeting/greeting';
+
 function App() {
   return (
-    <h1>Hello world!</h1>
+    <>
+      <Greeting message="Hello world" />
+    </>
   );
 }
 
